@@ -1,0 +1,29 @@
+// Import Bootstrap 5
+//@import "~bootstrap/scss/bootstrap";
+
+/* ./resources/sass/app.scss */
+//@tailwind base;
+//@tailwind components;
+//@tailwind utilities;
+
+//Import Sass Partials from 5 sass folders
+@import "abstracts/variables";
+@import "abstracts/function";
+@import "abstracts/mixins";
+
+@import "base/base";
+@import "base/animations";
+@import "base/typography";
+@import "base/utilities";
+
+@import "layout/main__navigation";
+@import "layout/admin__navigation";
+@import "layout/header";
+@import "layout/grid";
+
+@import "components/button";
+@import "components/composition";
+
+@import "pages/home";
+@import "pages/construction";
+// CSS which will be later distributed to different scss files

@@ -1,0 +1,26 @@
+@mixin flexLayout {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@mixin textStyles {
+  font-weight: 500;
+  letter-spacing: 0.1rem;
+  // text-transform: uppercase;
+}
+@mixin centering($topValue) {
+  position: absolute;
+  top: $topValue;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+@mixin clearfix {
+  &::after {
+    /* mandatory otherwise a pseudo-element does not
+       appeare on the page.It will be empty because we don't want to see it on the page
+    */
+    content: "";
+    display: table; /* display it with the table value*/
+    clear: both;
+  }
+}

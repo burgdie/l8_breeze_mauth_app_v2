@@ -1,0 +1,139 @@
+.admin {
+  &__container {
+    width: 100%;
+    height: 100%;
+  }
+  &__sidebar {
+    width: 15vw;
+    height: 100vh;
+    background-color: $color_dark_blue;
+    position: fixed;
+    padding: 1.5rem 1rem;
+  }
+
+  &__card {
+    display: flex;
+  }
+  &__admin-image {
+    width: 5rem;
+    border-radius: 0.5rem;
+  }
+  &__card-body {
+    margin-left: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+  }
+  &__card-title {
+    font-size: 2rem;
+    margin-right: 3rem;
+    color: $color_bisque;
+    letter-spacing: 0.1rem;
+  }
+  &__card-subtitle {
+    font-size: 1.6rem;
+    color: $color-grey-light-1;
+  }
+  &__search-form {
+    margin: 2rem 0 1rem 0;
+    display: flex;
+    align-items: center;
+  }
+  &__search-input {
+    width: 100%;
+    height: 4rem;
+    background-color: $color-grey-light-1;
+    border: none;
+    border-radius: 0.5rem;
+    padding: 0 1rem;
+    font-size: 2rem;
+    color: $color_dark_blue;
+    letter-spacing: 0.1rem;
+  }
+
+  &__search-button {
+    background-color: transparent;
+    transform: translateX(-150%);
+  }
+
+  &__search-button i {
+    font-size: 2rem;
+    color: $color_dark_blue;
+  }
+  &__nav-list {
+    margin-top: 3rem;
+  }
+  &__nav-item {
+    margin: 2rem 0;
+  }
+
+  &__nav-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: $color-grey-light-1;
+  }
+  &__nav-link-text {
+    font-size: 1.8rem;
+    padding-left: 1rem;
+    flex-grow: 1;
+  }
+  &__nav-link i:first-child {
+    width: 2rem;
+    height: 2rem;
+    background-color: $color_light_gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    transition: color 0.2s;
+  }
+  &__nav-link i:last-child {
+    margin-right: 2.5rem;
+    font-size: 1.6rem;
+  }
+
+  &__nav-link:hover i:first-child {
+    color: $color_chocolate;
+  }
+
+  &__sub-nav-list {
+    width: 90%;
+    margin-left: auto;
+  }
+
+  &__sub-nav-item {
+    margin: 0.5rem 0;
+  }
+  &__sub-nav-link {
+    font-size: 1.5rem;
+    color: $color-grey-light-1;
+  }
+
+  &__main-section {
+    width: 85vw;
+    position: relative;
+    left: 15vw;
+  }
+  &__header {
+    width: inherit;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../../../public/assets/images/office_1920.jpg);
+  }
+  &__heading {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 10rem;
+    color: $color-white;
+    letter-spacing: 1rem;
+  }
+}

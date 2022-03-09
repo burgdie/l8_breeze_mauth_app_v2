@@ -1,0 +1,28 @@
+.construction__login {
+  height: 100vh;
+  width: 100vw;
+  background-color: lavender;
+}
+.construction__login--container {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 90vw;
+  height: 100vh;
+  background-color: $color_butterfly_4;
+}
+.construction__login--card {
+  width: 50%;
+  height: 50%;
+  background-color: $color_teal_med;
+}
+
+// .construction__link {
+//   display: flex;
+//   justify-content: center;
+//   align-items: center;
+//   color: bisque;
+//   font-size: xx-large;
+//   padding-top: 75rem;
+// }
