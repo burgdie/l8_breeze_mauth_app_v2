@@ -102,6 +102,93 @@
 
           </ul>
         </li>
+        <li class="admin__nav-item">
+          <a href="#" class="admin__nav-link">
+           <span class="material-icons">
+              restaurant_menu
+           </span>
+            <span class="admin__nav-link-text">
+              Speisen
+            </span>
+            <span
+              class="material-icons">
+              chevron_right
+            </span>
+          </a>
+          <ul class="admin__sub-nav-list">
+            <li class="sub-nav-item">
+                <a href="#" class="sub-nav-link">
+                  {{-- <i class="far fa-circle"></i> --}}
+                  <span class="material-icons">
+                    lunch_dining
+                  </span>
+                  <span> Mittagstisch</span>
+                </a>
+              </li>
+            <li class="admin__sub-nav-item">
+                <a href="#" class="admin__sub-nav-link">
+                  {{-- <i class="far fa-circle"></i> --}}
+                  <span class="material-icons">
+                    menu_book
+                   </span>
+                  <span>Speisekarte</span>
+                </a>
+              </li>
+
+
+          </ul>
+        </li>
+        <li class="admin__nav-item">
+          <a href="#" class="admin__nav-link">
+           <span class="material-icons">
+              food_bank
+           </span>
+            <span class="admin__nav-link-text">
+              Filialen
+            </span>
+            <span
+              class="material-icons">
+              chevron_right
+            </span>
+          </a>
+          <ul class="admin__sub-nav-list">
+            <li class="sub-nav-item">
+                <a href="#" class="sub-nav-link">
+                  {{-- <i class="far fa-circle"></i> --}}
+                  <span class="material-icons">
+                    store
+                  </span>
+                  <span>Filial_liste</span>
+                </a>
+              </li>
+            <li class="admin__sub-nav-item">
+                <a href="#" class="admin__sub-nav-link">
+                  {{-- <i class="far fa-circle"></i> --}}
+                  <span class="material-icons">
+                    add_business
+                   </span>
+                  <span>Filiale hinufügen</span>
+                </a>
+              </li>
+
+
+          </ul>
+        </li>
+      </ul>
+      <ul class="admin__bottom-list">
+        <li class="admin__bottom-list-item">
+          <a href=" " class="admin--bottom-list-link">
+            <span class="material-icons">
+              logout
+            </span>
+            <span>Logout</span>
+
+          </a>
+
+
+        </li>
+
+
       </ul>
 
 

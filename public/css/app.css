@@ -457,6 +457,8 @@ a.main__nav--link:hover {
   position: absolute;
   top: 3rem;
   left: 5rem;
+  display: flex;
+  align-items: center;
 }
 .main__header--logo {
   font-size: 35px;
@@ -473,6 +475,11 @@ a.main__nav--link:hover {
 }
 .main__header--logo:hover {
   color: #d2691e;
+}
+.main__header-logo--span {
+  text-decoration: none;
+  font-size: 4rem;
+  color: #fbd1a7;
 }
 .main__header--text-box {
   position: absolute;

@@ -35,20 +35,26 @@
 
   <ul class="main__nav--list">
     <li class="main__nav--item">
-      <a href="#" class="main__nav--link">Home</a>
+      <a href="{{ url('/main') }}" class="main__nav--link">Home</a>
     </li>
     <li class="main__nav--item">
       {{-- <a href="{{ route('admin.users.index') }}" class="main__nav--link">Users </a> --}}
     </li>
     <li class="main__nav--item">
-      <a href="#" class="main__nav--link">About Us </a>
+      <a href="#" class="main__nav--link">Die Idee </a>
+    </li>
+    <li class="main__nav--item">
+      <a href="#" class="main__nav--link">Über uns </a>
+    </li>
+    <li class="main__nav--item">
+      <a href="#" class="main__nav--link">Kontakt </a>
     </li>
 
         @if (Route::has('login'))
           <div>
               @auth
               <li class="main__nav--item">
-                  <a class="main__nav--link" href="home" >Home</a>
+                  <a class="main__nav--link" href="{{ route('access') }}" >Home</a>
               </li>
               <li class="main__nav--item">
                   <a class="main__nav--link" href="{{ route('logout') }}" onclick="event.preventDefault(); document.getElementById('logout-form').submit();">Logout</a>
@@ -60,14 +66,14 @@
               </li>
               @else
               <li class="main__nav--item">
-                  <a class="main__nav--link" href="{{ route('login') }}">Login</a>
+                  <a class="main__nav--link" href="{{ route('login') }}">Gastronomie</a>
 
               </li>
-                  @if (Route::has('register'))
+                  {{-- @if (Route::has('register'))
                   <li class="main__nav--item">
                       <a class="main__nav--link" href="{{ route('register') }}" >Register</a>
                   </li>
-                  @endif
+                  @endif --}}
               @endauth
           </div>
         @endif

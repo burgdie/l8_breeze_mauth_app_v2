@@ -20,6 +20,9 @@ use Admin\UserController;
 Route::get('/', function () {
     return view('construction');
 });
+Route::get('/main', function () {
+    return view('main.index');
+});
 
 
 // Verification access from construction page
