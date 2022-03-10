@@ -1,0 +1,133 @@
+.login {
+  &__body {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.8rem;
+    // background-color: aqua;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba($color_dark_blue, 0.7),
+        rgba($color_dark_gray, 0.8)
+      ),
+      url(../../../public/assets/images/office_1920.jpg);
+    background-size: cover;
+  }
+  &__container {
+    width: 40rem;
+    max-width: 40rem;
+    margin: 1rem;
+    padding: 2rem;
+    box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+    border-radius: $login_border-radius;
+    background-color: $color-white;
+  }
+
+  &__container,
+  &__form_input,
+  &__form_button {
+    font: 500 2rem "Quicksand", sans-serif;
+  }
+  &__form--hidden {
+    display: none;
+  }
+
+  &__form > *:first-child {
+    margin-top: 0;
+  }
+  &__form > *:last-child {
+    margin-bottom: 0;
+  }
+
+  &__form_title {
+    margin-bottom: 2rem;
+    text-align: center;
+  }
+
+  &__form_message {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+  &__form_message--success {
+    color: $color_login-success;
+  }
+  &__form_message--error {
+    color: $color_login-error;
+  }
+  // &__form_input--group {
+  //   margin-bottom: 1rem;
+  // }
+
+  &__form_input {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    box-sizing: border-box;
+    border-radius: $login_border-radius;
+    border: 1px solid $color-grey-light-1;
+    outline: none;
+    background: $color-grey-light-2;
+    transition: background 0.2s, border-color 0.2;
+
+    &:focus {
+      border-color: $color_chocolate;
+    }
+    &--group {
+      margin-bottom: 1rem;
+    }
+
+    &-error {
+      color: $color_login-error;
+    }
+
+    &-error--message {
+      margin-top: 0.5rem;
+      font-size: 1rem;
+      color: $color_login-error;
+    }
+  }
+
+  &__form_button {
+    width: 100%;
+
+    padding: 1rem 2rem;
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: $color-grey-light-1;
+    border: none;
+    border-radius: $login_border-radius;
+    outline: none;
+    cursor: pointer;
+    background: $color_chocolate;
+    margin-bottom: 2rem;
+
+    &:hover {
+      background: transparent;
+      border: 1px solid $color_chocolate;
+      color: $color_chocolate;
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+  &__form_text {
+    text-align: center;
+    margin-bottom: 0.8rem;
+  }
+
+  // &__form_text * :first-child {
+  //   margin-top: 5rem;
+  // }
+
+  &__form_link {
+    color: $color-grey-light-1;
+    text-decoration: none;
+    cursor: pointer;
+
+    &:hover {
+      color: $color_chocolate;
+    }
+  }
+}

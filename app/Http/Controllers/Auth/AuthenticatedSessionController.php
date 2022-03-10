@@ -19,7 +19,7 @@ class AuthenticatedSessionController extends Controller
     {
       // dd('AuthenticatedSessionController create()');
         // return view('auth.login');
-      return view('construction.login');
+      return view('auth.admin_login');
     }
 
     /**

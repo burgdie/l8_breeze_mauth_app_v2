@@ -19,6 +19,11 @@
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap" rel="stylesheet"
     />
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans:300,300i,400,400i,600|Montserrat:300,300i,400,400i,500,500i,600,600i,700|Ubuntu:300,300i,400,400i,500,500i,700" rel="stylesheet">
+    {{-- Material Design Icon  --}}
+    <link href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp" rel="stylesheet">
+
+
+
     {{-- <link rel="stylesheet" href="css/icon-font.css"> --}}
     {{--  Styles --}}
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
@@ -45,13 +50,59 @@
       </div>
       {{-- Serach form --}}
       <form action=" " class="admin__search-form">
+        @csrf
         <input type="text" class="admin__search-input" placeholder="Search">
         <button type="button" class="admin__search-button">
-          <i class="fas fa-search"></i>
+          {{-- <i class="fas fa-search"></i> --}}
+          <span class="material-icons">search</span>
         </button>
-
-
       </form>
+      <ul class="admin__nav-list">
+        <li class="admin__nav-item">
+          <a href="" class="admin__nav-link">
+            {{-- <i class="fas fa-tachometer-alt"></i> --}}
+            <span class="material-icons">space_dashboard</span>
+            <span class="admin__nav-link-text">Dashboard</span>
+            <i class="fas fa-angle-right"></i>
+          </a>
+        </li>
+        <li class="admin__nav-item">
+          <a href="#" class="admin__nav-link">
+            <span class=" icon material-icons">
+              people_alt
+            </span>
+            <span class="admin__nav-link-text">Mitarbeiter</span>
+            {{-- <i class="fas fa-angle-right"></i> --}}
+            <span
+              class="material-icons">
+              chevron_right
+            </span>
+          </a>
+          <ul class="admin__sub-nav-list">
+            <li class="sub-nav-item">
+                <a href="#" class="sub-nav-link">
+                  {{-- <i class="far fa-circle"></i> --}}
+                  <span
+                    class="material-icons">
+                    groups
+                  </span>
+                  <span> Mitarbeiter Liste</span>
+                </a>
+              </li>
+            <li class="admin__sub-nav-item">
+                <a href="#" class="admin__sub-nav-link">
+                  {{-- <i class="far fa-circle"></i> --}}
+                  <span class=" material-icons">
+                    person_add
+                  </span>
+                  <span> Mitarbeiter hinzufügen</span>
+                </a>
+              </li>
+
+
+          </ul>
+        </li>
+      </ul>
 
 
 

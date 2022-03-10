@@ -53,7 +53,7 @@
 
   &__search-button {
     background-color: transparent;
-    transform: translateX(-150%);
+    transform: translateX(-120%);
   }
 
   &__search-button i {
@@ -79,7 +79,7 @@
     padding-left: 1rem;
     flex-grow: 1;
   }
-  &__nav-link i:first-child {
+  &__nav-link span:first-child {
     width: 2rem;
     height: 2rem;
     background-color: $color_light_gray;
@@ -90,12 +90,12 @@
     border-radius: 0.3rem;
     transition: color 0.2s;
   }
-  &__nav-link i:last-child {
+  &__nav-link span .i:last-child {
     margin-right: 2.5rem;
     font-size: 1.6rem;
   }
 
-  &__nav-link:hover i:first-child {
+  &__nav-link:hover span:first-child {
     color: $color_chocolate;
   }
 
@@ -107,7 +107,7 @@
   &__sub-nav-item {
     margin: 0.5rem 0;
   }
-  &__sub-nav-link {
+  &__sub-nav-link span .material-icons {
     font-size: 1.5rem;
     color: $color-grey-light-1;
   }
@@ -135,5 +135,9 @@
     font-size: 10rem;
     color: $color-white;
     letter-spacing: 1rem;
+  }
+  span.material-icons {
+    font-size: 1.3rem;
+    color: $color-grey-light-1;
   }
 }

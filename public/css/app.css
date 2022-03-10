@@ -23,6 +23,29 @@ li {
   list-style: none;
 }
 
+.material-icons {
+  font-family: "Material Icons";
+  font-weight: normal;
+  font-style: normal;
+  font-size: 24px;
+  /* Preferred icon size */
+  display: inline-block;
+  line-height: 1;
+  text-transform: none;
+  letter-spacing: normal;
+  word-wrap: normal;
+  white-space: nowrap;
+  direction: ltr;
+  /* Support for all WebKit browsers. */
+  -webkit-font-smoothing: antialiased;
+  /* Support for Safari and Chrome. */
+  text-rendering: optimizeLegibility;
+  /* Support for Firefox. */
+  -moz-osx-font-smoothing: grayscale;
+  /* Support for IE. */
+  font-feature-settings: "liga";
+}
+
 @-webkit-keyframes moveInLeft {
   0% {
     opacity: 0;
@@ -345,7 +368,7 @@ a.main__nav--link:hover {
 }
 .admin__search-button {
   background-color: transparent;
-  transform: translateX(-150%);
+  transform: translateX(-120%);
 }
 .admin__search-button i {
   font-size: 2rem;
@@ -369,7 +392,7 @@ a.main__nav--link:hover {
   padding-left: 1rem;
   flex-grow: 1;
 }
-.admin__nav-link i:first-child {
+.admin__nav-link span:first-child {
   width: 2rem;
   height: 2rem;
   background-color: #607178;
@@ -380,11 +403,11 @@ a.main__nav--link:hover {
   border-radius: 0.3rem;
   transition: color 0.2s;
 }
-.admin__nav-link i:last-child {
+.admin__nav-link span .i:last-child {
   margin-right: 2.5rem;
   font-size: 1.6rem;
 }
-.admin__nav-link:hover i:first-child {
+.admin__nav-link:hover span:first-child {
   color: #d2691e;
 }
 .admin__sub-nav-list {
@@ -394,7 +417,7 @@ a.main__nav--link:hover {
 .admin__sub-nav-item {
   margin: 0.5rem 0;
 }
-.admin__sub-nav-link {
+.admin__sub-nav-link span .material-icons {
   font-size: 1.5rem;
   color: #c2c0c0;
 }
@@ -416,6 +439,10 @@ a.main__nav--link:hover {
   font-size: 10rem;
   color: #fff;
   letter-spacing: 1rem;
+}
+.admin span.material-icons {
+  font-size: 1.3rem;
+  color: #c2c0c0;
 }
 
 .main__header {
@@ -735,4 +762,108 @@ a.main__nav--link:hover {
   letter-spacing: 0.2rem;
   color: #fff;
   cursor: pointer;
+}
+
+.login__body {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.8rem;
+  background-image: linear-gradient(to right bottom, rgba(1, 39, 60, 0.7), rgba(53, 54, 66, 0.8)), url(/images/office_1920.jpg?99ab35bf6ed0c88ed942bc9eaec99de7);
+  background-size: cover;
+}
+.login__container {
+  width: 40rem;
+  max-width: 40rem;
+  margin: 1rem;
+  padding: 2rem;
+  box-shadow: 0 0 40px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  background-color: #fff;
+}
+.login__container, .login__form_input, .login__form_button {
+  font: 500 2rem "Quicksand", sans-serif;
+}
+.login__form--hidden {
+  display: none;
+}
+.login__form > *:first-child {
+  margin-top: 0;
+}
+.login__form > *:last-child {
+  margin-bottom: 0;
+}
+.login__form_title {
+  margin-bottom: 2rem;
+  text-align: center;
+}
+.login__form_message {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.login__form_message--success {
+  color: #4bb544;
+}
+.login__form_message--error {
+  color: #cc3333;
+}
+.login__form_input {
+  display: block;
+  width: 100%;
+  padding: 0.75rem;
+  box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #c2c0c0;
+  outline: none;
+  background: #f5f1f1;
+  transition: background 0.2s, border-color 0.2;
+}
+.login__form_input:focus {
+  border-color: #d2691e;
+}
+.login__form_input--group {
+  margin-bottom: 1rem;
+}
+.login__form_input-error {
+  color: #cc3333;
+}
+.login__form_input-error--message {
+  margin-top: 0.5rem;
+  font-size: 1rem;
+  color: #cc3333;
+}
+.login__form_button {
+  width: 100%;
+  padding: 1rem 2rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  color: #c2c0c0;
+  border: none;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background: #d2691e;
+  margin-bottom: 2rem;
+}
+.login__form_button:hover {
+  background: transparent;
+  border: 1px solid #d2691e;
+  color: #d2691e;
+}
+.login__form_button:active {
+  transform: scale(0.95);
+}
+.login__form_text {
+  text-align: center;
+  margin-bottom: 0.8rem;
+}
+.login__form_link {
+  color: #c2c0c0;
+  text-decoration: none;
+  cursor: pointer;
+}
+.login__form_link:hover {
+  color: #d2691e;
 }
