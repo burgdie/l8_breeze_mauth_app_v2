@@ -44,12 +44,12 @@
            <img src="{{ asset('assets/images/admin_1.jpg') }}" alt="Admin Image" class="admin__admin-image">
         </div>
         <div class="admin__card-body">
-          <div class="admin__card-title">Dieter Burgtsaller</div>
+          <div class="admin__card-title">Dieter Burgstaller</div>
           <p class="admin__card-subtitle">Administrator</p>
         </div>
       </div>
       {{-- Serach form --}}
-      <form action=" " class="admin__search-form">
+      <form action="" method="POST" class="admin__search-form">
         @csrf
         <input type="text" class="admin__search-input" placeholder="Search">
         <button type="button" class="admin__search-button">
@@ -63,12 +63,15 @@
             {{-- <i class="fas fa-tachometer-alt"></i> --}}
             <span class="material-icons">space_dashboard</span>
             <span class="admin__nav-link-text">Dashboard</span>
-            <i class="fas fa-angle-right"></i>
+            <span
+              class="material-icons">
+              chevron_right
+            </span>
           </a>
         </li>
         <li class="admin__nav-item">
           <a href="#" class="admin__nav-link">
-            <span class=" icon material-icons">
+            <span class="material-icons">
               people_alt
             </span>
             <span class="admin__nav-link-text">Mitarbeiter</span>
@@ -79,8 +82,8 @@
             </span>
           </a>
           <ul class="admin__sub-nav-list">
-            <li class="sub-nav-item">
-                <a href="#" class="sub-nav-link">
+            <li class="admin__sub-nav-item">
+                <a href="#" class="admin__sub-nav-link">
                   {{-- <i class="far fa-circle"></i> --}}
                   <span
                     class="material-icons">
@@ -117,7 +120,7 @@
           </a>
           <ul class="admin__sub-nav-list">
             <li class="sub-nav-item">
-                <a href="#" class="sub-nav-link">
+                <a href="#" class="admin__sub-nav-link">
                   {{-- <i class="far fa-circle"></i> --}}
                   <span class="material-icons">
                     lunch_dining
@@ -152,8 +155,8 @@
             </span>
           </a>
           <ul class="admin__sub-nav-list">
-            <li class="sub-nav-item">
-                <a href="#" class="sub-nav-link">
+            <li class="admin__sub-nav-item">
+                <a href="#" class="admin__sub-nav-link">
                   {{-- <i class="far fa-circle"></i> --}}
                   <span class="material-icons">
                     store
@@ -177,11 +180,11 @@
       </ul>
       <ul class="admin__bottom-list">
         <li class="admin__bottom-list-item">
-          <a href=" " class="admin--bottom-list-link">
-            <span class="material-icons">
+          <a href=" " class="admin__bottom-list-link">
+            <span class="admin__bottom-list-icon material-icons">
               logout
             </span>
-            <span>Logout</span>
+            <span class="admin__bottom-list-text">Logout</span>
 
           </a>
 
@@ -196,6 +199,11 @@
 
 
     </nav>
+    <section class="admin__main-section">
+        <header class="admin__header">
+          <h1 class="admin__heading">Dashboard</h1>
+        </header>
+      </section>
   </div>
 
 

@@ -8,15 +8,45 @@
     height: 100vh;
     background-color: $color_dark_blue;
     position: fixed;
+    // top: 4rem;
     padding: 1.5rem 1rem;
+    box-sizing: border-box;
+  }
+  &__main-section {
+    width: 82vw;
+
+    position: relative;
+    left: 15vw;
+  }
+  &__header {
+    width: inherit;
+    height: 100vh;
+    background-image: linear-gradient(
+        to right bottom,
+        rgba(0, 0, 0, 0.3),
+        rgba(0, 0, 0, 0.5)
+      ),
+      url(../../../public/assets/images/office_1920.jpg);
+    background-size: cover;
+  }
+  &__heading {
+    position: absolute;
+    top: 5%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 8rem;
+    color: $color-white;
+    letter-spacing: 1rem;
   }
 
   &__card {
     display: flex;
+    align-items: center;
   }
   &__admin-image {
-    width: 5rem;
-    border-radius: 0.5rem;
+    width: 8rem;
+    height: 8rem;
+    border-radius: 50%;
   }
   &__card-body {
     margin-left: 1rem;
@@ -31,7 +61,7 @@
     letter-spacing: 0.1rem;
   }
   &__card-subtitle {
-    font-size: 1.6rem;
+    font-size: 1.8rem;
     color: $color-grey-light-1;
   }
   &__search-form {
@@ -53,11 +83,11 @@
 
   &__search-button {
     background-color: transparent;
-    transform: translateX(-120%);
+    transform: translateX(-100%);
   }
 
-  &__search-button i {
-    font-size: 2rem;
+  &__search-button span.material-icons {
+    font-size: 2.5rem;
     color: $color_dark_blue;
   }
   &__nav-list {
@@ -80,8 +110,8 @@
     flex-grow: 1;
   }
   &__nav-link span:first-child {
-    width: 2rem;
-    height: 2rem;
+    width: 2.8rem;
+    height: 2.8rem;
     background-color: $color_light_gray;
     display: flex;
     justify-content: center;
@@ -90,13 +120,20 @@
     border-radius: 0.3rem;
     transition: color 0.2s;
   }
-  &__nav-link span .i:last-child {
+  &__nav-link span:nth-child(2) {
+    font-size: 2.2rem;
+  }
+  &__nav-link:hover span:nth-child(2) {
+    color: $color_bisque;
+  }
+  &__nav-link span:last-child {
     margin-right: 2.5rem;
-    font-size: 1.6rem;
+    font-size: 2.2rem;
   }
 
   &__nav-link:hover span:first-child {
     color: $color_chocolate;
+    background-color: $color_bisque;
   }
 
   &__sub-nav-list {
@@ -107,37 +144,82 @@
   &__sub-nav-item {
     margin: 0.5rem 0;
   }
+
+  &__sub-nav-link {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    // font-size: 1rem;
+    // margin-right: 0.5rem;
+    color: $color-grey-light-1;
+  }
+
+  &__sub-nav-link span:first-child {
+    width: 2.4rem;
+    height: 2.4rem;
+    margin-right: 1.2rem;
+    background-color: $color_light_gray;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.2rem;
+    border-radius: 0.3rem;
+    transition: color 0.2s;
+  }
+  &__sub-nav-link span:nth-child(2) {
+    font-size: 1.6rem;
+  }
+  &__sub-nav-link:hover span:nth-child(2) {
+    color: $color_bisque;
+  }
+  &__sub-nav-link span:last-child {
+    margin-right: 3rem;
+    font-size: 1.6rem;
+  }
+  &__sub-nav-link:hover span:first-child {
+    color: $color_chocolate;
+    background-color: $color_bisque;
+  }
+
   &__sub-nav-link span .material-icons {
     font-size: 1.5rem;
     color: $color-grey-light-1;
   }
-
-  &__main-section {
-    width: 85vw;
-    position: relative;
-    left: 15vw;
-  }
-  &__header {
-    width: inherit;
-    height: 100vh;
-    background-image: linear-gradient(
-        to right bottom,
-        rgba(0, 0, 0, 0.3),
-        rgba(0, 0, 0, 0.5)
-      ),
-      url(../../../public/assets/images/office_1920.jpg);
-  }
-  &__heading {
+  &__bottom-list {
+    width: 100%;
+    // background-color: $color_light_gray;
     position: absolute;
-    top: 5%;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 10rem;
-    color: $color-white;
-    letter-spacing: 1rem;
-  }
-  span.material-icons {
-    font-size: 1.3rem;
-    color: $color-grey-light-1;
+    bottom: 0;
+    padding: 0.5rem 0;
+    margin-bottom: 5rem;
+    display: flex;
+    justify-content: space-between;
+    transform: translateX(-1rem);
+    border: 1px solid $color_light_gray;
+
+    &-link {
+      font-weight: 700;
+      color: $color_light_gray;
+      display: flex;
+      text-decoration: none;
+      // justify-content: space-between;
+    }
+
+    &-icon {
+      font-size: 3rem;
+      margin-left: 2rem;
+      &:hover {
+        color: $color_chocolate;
+      }
+    }
+    &-text {
+      font-size: 2rem;
+      margin-left: 2rem;
+      margin-bottom: 0.2rem;
+      &:hover {
+        color: $color_chocolate;
+      }
+    }
   }
 }

@@ -326,13 +326,36 @@ a.main__nav--link:hover {
   background-color: #01273c;
   position: fixed;
   padding: 1.5rem 1rem;
+  box-sizing: border-box;
+}
+.admin__main-section {
+  width: 82vw;
+  position: relative;
+  left: 15vw;
+}
+.admin__header {
+  width: inherit;
+  height: 100vh;
+  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/images/office_1920.jpg?99ab35bf6ed0c88ed942bc9eaec99de7);
+  background-size: cover;
+}
+.admin__heading {
+  position: absolute;
+  top: 5%;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 8rem;
+  color: #fff;
+  letter-spacing: 1rem;
 }
 .admin__card {
   display: flex;
+  align-items: center;
 }
 .admin__admin-image {
-  width: 5rem;
-  border-radius: 0.5rem;
+  width: 8rem;
+  height: 8rem;
+  border-radius: 50%;
 }
 .admin__card-body {
   margin-left: 1rem;
@@ -347,7 +370,7 @@ a.main__nav--link:hover {
   letter-spacing: 0.1rem;
 }
 .admin__card-subtitle {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #c2c0c0;
 }
 .admin__search-form {
@@ -368,10 +391,10 @@ a.main__nav--link:hover {
 }
 .admin__search-button {
   background-color: transparent;
-  transform: translateX(-120%);
+  transform: translateX(-100%);
 }
-.admin__search-button i {
-  font-size: 2rem;
+.admin__search-button span.material-icons {
+  font-size: 2.5rem;
   color: #01273c;
 }
 .admin__nav-list {
@@ -393,8 +416,8 @@ a.main__nav--link:hover {
   flex-grow: 1;
 }
 .admin__nav-link span:first-child {
-  width: 2rem;
-  height: 2rem;
+  width: 2.8rem;
+  height: 2.8rem;
   background-color: #607178;
   display: flex;
   justify-content: center;
@@ -403,12 +426,19 @@ a.main__nav--link:hover {
   border-radius: 0.3rem;
   transition: color 0.2s;
 }
-.admin__nav-link span .i:last-child {
+.admin__nav-link span:nth-child(2) {
+  font-size: 2.2rem;
+}
+.admin__nav-link:hover span:nth-child(2) {
+  color: #ffe4c4;
+}
+.admin__nav-link span:last-child {
   margin-right: 2.5rem;
-  font-size: 1.6rem;
+  font-size: 2.2rem;
 }
 .admin__nav-link:hover span:first-child {
   color: #d2691e;
+  background-color: #ffe4c4;
 }
 .admin__sub-nav-list {
   width: 90%;
@@ -417,32 +447,74 @@ a.main__nav--link:hover {
 .admin__sub-nav-item {
   margin: 0.5rem 0;
 }
+.admin__sub-nav-link {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #c2c0c0;
+}
+.admin__sub-nav-link span:first-child {
+  width: 2.4rem;
+  height: 2.4rem;
+  margin-right: 1.2rem;
+  background-color: #607178;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  transition: color 0.2s;
+}
+.admin__sub-nav-link span:nth-child(2) {
+  font-size: 1.6rem;
+}
+.admin__sub-nav-link:hover span:nth-child(2) {
+  color: #ffe4c4;
+}
+.admin__sub-nav-link span:last-child {
+  margin-right: 3rem;
+  font-size: 1.6rem;
+}
+.admin__sub-nav-link:hover span:first-child {
+  color: #d2691e;
+  background-color: #ffe4c4;
+}
 .admin__sub-nav-link span .material-icons {
   font-size: 1.5rem;
   color: #c2c0c0;
 }
-.admin__main-section {
-  width: 85vw;
-  position: relative;
-  left: 15vw;
-}
-.admin__header {
-  width: inherit;
-  height: 100vh;
-  background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.5)), url(/images/office_1920.jpg?99ab35bf6ed0c88ed942bc9eaec99de7);
-}
-.admin__heading {
+.admin__bottom-list {
+  width: 100%;
   position: absolute;
-  top: 5%;
-  left: 50%;
-  transform: translateX(-50%);
-  font-size: 10rem;
-  color: #fff;
-  letter-spacing: 1rem;
+  bottom: 0;
+  padding: 0.5rem 0;
+  margin-bottom: 5rem;
+  display: flex;
+  justify-content: space-between;
+  transform: translateX(-1rem);
+  border: 1px solid #607178;
 }
-.admin span.material-icons {
-  font-size: 1.3rem;
-  color: #c2c0c0;
+.admin__bottom-list-link {
+  font-weight: 700;
+  color: #607178;
+  display: flex;
+  text-decoration: none;
+}
+.admin__bottom-list-icon {
+  font-size: 3rem;
+  margin-left: 2rem;
+}
+.admin__bottom-list-icon:hover {
+  color: #d2691e;
+}
+.admin__bottom-list-text {
+  font-size: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 0.2rem;
+}
+.admin__bottom-list-text:hover {
+  color: #d2691e;
 }
 
 .main__header {
