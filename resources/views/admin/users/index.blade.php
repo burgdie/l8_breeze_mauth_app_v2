@@ -57,7 +57,10 @@
           <span class="material-icons">search</span>
         </button>
       </form>
+      {{-- Main Navigation Items --}}
       <ul class="admin__nav-list">
+
+        {{-- Start Main Navigation Item Dashboard --}}
         <li class="admin__nav-item">
           <a href="" class="admin__nav-link">
             {{-- <i class="fas fa-tachometer-alt"></i> --}}
@@ -69,6 +72,9 @@
             </span>
           </a>
         </li>
+        {{-- Endt Main Navigation Item Dashboard --}}
+
+        {{-- Start Main Navigation Item Mitarbeiter --}}
         <li class="admin__nav-item">
           <a href="#" class="admin__nav-link">
             <span class="material-icons">
@@ -81,30 +87,38 @@
               chevron_right
             </span>
           </a>
+          {{-- Start Sub Navigation List --}}
           <ul class="admin__sub-nav-list">
+            {{-- Start Sub Navigation Item  --}}
             <li class="admin__sub-nav-item">
-                <a href="#" class="admin__sub-nav-link">
-                  {{-- <i class="far fa-circle"></i> --}}
-                  <span
-                    class="material-icons">
-                    groups
-                  </span>
-                  <span> Mitarbeiter Liste</span>
-                </a>
-              </li>
+              <a href="#" class="admin__sub-nav-link">
+                {{-- <i class="far fa-circle"></i> --}}
+                <span
+                  class="material-icons">
+                  groups
+                </span>
+                <span> Mitarbeiter Liste</span>
+              </a>
+            </li>
+            {{-- End Sub Navigation Item  --}}
+
+            {{-- Start Sub Navigation Item  --}}
             <li class="admin__sub-nav-item">
-                <a href="#" class="admin__sub-nav-link">
-                  {{-- <i class="far fa-circle"></i> --}}
-                  <span class=" material-icons">
-                    person_add
-                  </span>
-                  <span> Mitarbeiter hinzufügen</span>
-                </a>
-              </li>
-
-
+              <a href="#" class="admin__sub-nav-link">
+                {{-- <i class="far fa-circle"></i> --}}
+                <span class=" material-icons">
+                  person_add
+                </span>
+                <span> Mitarbeiter hinzufügen</span>
+              </a>
+            </li>
+             {{-- End Sub Navigation Item  --}}
           </ul>
+          {{-- End Sub navigation List  --}}
         </li>
+        {{-- End Main Navigation Item Mitarbeiter --}}
+
+        {{-- Start Main Navigation Item Speisen--}}
         <li class="admin__nav-item">
           <a href="#" class="admin__nav-link">
            <span class="material-icons">
@@ -141,6 +155,9 @@
 
           </ul>
         </li>
+        {{-- End Main Navigation Item Speisen --}}
+
+        {{-- Start Main Navigation Item Filialen  --}}
         <li class="admin__nav-item">
           <a href="#" class="admin__nav-link">
            <span class="material-icons">
@@ -177,14 +194,88 @@
 
           </ul>
         </li>
+        {{-- End Main Navigation Item Speisen --}}
+
+        {{-- Start Main Navigation Item Logo/Potriats --}}
+        <li class="admin__nav-item">
+          <a href="#" class="admin__nav-link">
+           <span class="material-icons">
+              portrait
+           </span>
+            <span class="admin__nav-link-text">
+              Logo/Portraits
+            </span>
+            <span
+              class="material-icons">
+              chevron_right
+            </span>
+          </a>
+          <ul class="admin__sub-nav-list">
+            <li class="admin__sub-nav-item">
+              <a href="#" class="admin__sub-nav-link">
+                {{-- <i class="far fa-circle"></i> --}}
+                <span class="material-icons">
+                  photo_camera
+                </span>
+                <span>Logo/Portrait Liste</span>
+              </a>
+            </li>
+            <li class="admin__sub-nav-item">
+              <a href="#" class="admin__sub-nav-link">
+                {{-- <i class="far fa-circle"></i> --}}
+                <span class="material-icons">
+                  add_a_photo
+                </span>
+                <span>Logo/Portrait hinzufügen</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        {{-- End Main Navigation Item  Logo/Portraits --}}
+        {{-- Start Main Navigation Item Logo/Potriats --}}
+        <li class="admin__nav-item">
+          <a href="#" class="admin__nav-link">
+           <span class="material-icons">
+              portrait
+           </span>
+            <span class="admin__nav-link-text">
+              Gallery
+            </span>
+            <span
+              class="material-icons">
+              chevron_right
+            </span>
+          </a>
+          <ul class="admin__sub-nav-list">
+            <li class="admin__sub-nav-item">
+              <a href="#" class="admin__sub-nav-link">
+                {{-- <i class="far fa-circle"></i> --}}
+                <span class="material-icons">
+                  photo_library
+                </span>
+                <span>Bilder Liste</span>
+              </a>
+            </li>
+            <li class="admin__sub-nav-item">
+              <a href="#" class="admin__sub-nav-link">
+                {{-- <i class="far fa-circle"></i> --}}
+                <span class="material-icons">
+                  add_a_photo
+                </span>
+                <span>Bild hinzufügen</span>
+              </a>
+            </li>
+          </ul>
+        </li>
+        {{-- End Main Navigation Item  Logo/Portraits --}}
       </ul>
       <ul class="admin__bottom-list">
         <li class="admin__bottom-list-item">
           <a href=" " class="admin__bottom-list-link">
-            <span class="admin__bottom-list-icon material-icons">
+            <span class="material-icons">
               logout
             </span>
-            <span class="admin__bottom-list-text">Logout</span>
+            <span class="admin__bottom-list-link--text">Logout</span>
 
           </a>
 

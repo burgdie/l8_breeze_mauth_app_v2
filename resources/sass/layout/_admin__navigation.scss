@@ -94,7 +94,7 @@
     margin-top: 3rem;
   }
   &__nav-item {
-    margin: 2rem 0;
+    margin: 1.5rem 0;
   }
 
   &__nav-link {
@@ -192,33 +192,54 @@
     position: absolute;
     bottom: 0;
     padding: 0.5rem 0;
-    margin-bottom: 5rem;
+    margin-bottom: 4rem;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     transform: translateX(-1rem);
     border: 1px solid $color_light_gray;
 
     &-link {
-      font-weight: 700;
-      color: $color_light_gray;
       display: flex;
       text-decoration: none;
-      // justify-content: space-between;
+      justify-content: space-between;
+      align-items: center;
     }
+    &-link .material-icons {
+      // font-size: 2.2rem;
+      width: 2.8rem;
+      height: 2.8rem;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 0.2rem;
+      border-radius: 0.3rem;
+      transition: color 0.2s;
 
-    &-icon {
-      font-size: 3rem;
-      margin-left: 2rem;
+      font-weight: 700;
+
+      color: $color-grey-light-1;
+      background-color: $color_light_gray;
+      // justify-content: space-between;
       &:hover {
         color: $color_chocolate;
+        background-color: $color_bisque;
       }
     }
-    &-text {
-      font-size: 2rem;
-      margin-left: 2rem;
-      margin-bottom: 0.2rem;
+
+    // &-icon {
+    //   font-size: 3rem;
+    //   margin-left: 2rem;
+    //   &:hover {
+    //     color: $color_bisque;
+    //   }
+    // }
+    &-link--text {
+      font-size: 2.2rem;
+      margin-left: 2.5rem;
+      margin-bottom: 0.6rem;
+      color: $color-grey-light-1;
       &:hover {
-        color: $color_chocolate;
+        color: $color_bisque;
       }
     }
   }

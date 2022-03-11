@@ -401,7 +401,7 @@ a.main__nav--link:hover {
   margin-top: 3rem;
 }
 .admin__nav-item {
-  margin: 2rem 0;
+  margin: 1.5rem 0;
 }
 .admin__nav-link {
   width: 100%;
@@ -489,32 +489,43 @@ a.main__nav--link:hover {
   position: absolute;
   bottom: 0;
   padding: 0.5rem 0;
-  margin-bottom: 5rem;
+  margin-bottom: 4rem;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   transform: translateX(-1rem);
   border: 1px solid #607178;
 }
 .admin__bottom-list-link {
-  font-weight: 700;
-  color: #607178;
   display: flex;
   text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
 }
-.admin__bottom-list-icon {
-  font-size: 3rem;
-  margin-left: 2rem;
+.admin__bottom-list-link .material-icons {
+  width: 2.8rem;
+  height: 2.8rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.2rem;
+  border-radius: 0.3rem;
+  transition: color 0.2s;
+  font-weight: 700;
+  color: #c2c0c0;
+  background-color: #607178;
 }
-.admin__bottom-list-icon:hover {
+.admin__bottom-list-link .material-icons:hover {
   color: #d2691e;
+  background-color: #ffe4c4;
 }
-.admin__bottom-list-text {
-  font-size: 2rem;
-  margin-left: 2rem;
-  margin-bottom: 0.2rem;
+.admin__bottom-list-link--text {
+  font-size: 2.2rem;
+  margin-left: 2.5rem;
+  margin-bottom: 0.6rem;
+  color: #c2c0c0;
 }
-.admin__bottom-list-text:hover {
-  color: #d2691e;
+.admin__bottom-list-link--text:hover {
+  color: #ffe4c4;
 }
 
 .main__header {
